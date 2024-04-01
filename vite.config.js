@@ -7,10 +7,14 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: "autoUpdate",
-      workbox: {
+      strategies: "injectManifest",
+      injectManifest: {
+        maximumFileSizeToCacheInBytes: 3000000,
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
       },
+      srcDir: "src",
+      filename: "service-worker.js",
+      devOptions: { enabled: true, type: "module" },
       manifest: {
         theme_color: "#5a189a",
         background_color: "#09001a",
@@ -45,7 +49,6 @@ export default defineConfig({
           },
         ],
       },
-      devOptions: { enabled: true },
     }),
   ],
 });
