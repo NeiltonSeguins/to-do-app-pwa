@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import Button from "../Button";
 import "./Form.css";
 
@@ -30,7 +31,7 @@ export default function Form({ tasks, setTasks, updateLocalStorage }) {
         type="text"
         placeholder="Adicione uma tarefa"
       />
-      <Button type="submit">Adicionar</Button>
+      <Button tipo="submit">Adicionar</Button>
     </form>
   );
 }

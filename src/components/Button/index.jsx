@@ -1,10 +1,10 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import "./Button.css";
 
-export default function Button(props) {
+export default function Button({ children, tipo }) {
   return (
-    <button className="botao" type={props.type}>
-      {props.children}
+    <button className="botao" type={tipo}>
+      {children}
     </button>
   );
 }
