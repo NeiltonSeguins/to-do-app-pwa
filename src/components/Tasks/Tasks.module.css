@@ -1,0 +1,36 @@
+ul {
+  width: 100%;
+}
+
+span {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+button {
+  border: none;
+  border-radius: 100%;
+  padding: 3px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 6px 16px;
+  background-color: var(--primary);
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.task__completa {
+  filter: opacity(0.5);
+}
+
+.task__completa p {
+  text-decoration: line-through;
+}
