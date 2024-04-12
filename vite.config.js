@@ -10,15 +10,9 @@ export default defineConfig({
       mode: "development",
       strategies: "injectManifest",
       srcDir: "src",
-      filename: "service-worker.js",
+      filename: "sw.js",
       injectManifest: {
-        sourcemap: true,
-        enableWorkboxModulesLogs: true,
         globPatterns: ["**/*.{js,jsx,css,html}"],
-      },
-      devOptions: {
-        enabled: true,
-        type: "module",
       },
       manifest: {
         theme_color: "#5a189a",
