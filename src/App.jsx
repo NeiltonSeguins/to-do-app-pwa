@@ -3,6 +3,7 @@ import "./App.css";
 import Form from "./components/Form";
 import Tasks from "./components/Tasks";
 import { useEffect, useState } from "react";
+import foco from "./assets/foco.png";
 
 function App() {
   const [tasks, setTasks] = useState(
@@ -31,6 +32,7 @@ function App() {
     <>
       <main className="container">
         <h1>To-Do</h1>
+        <img src={foco} alt="Pessoa com fone de ouvido de costas concentrado" />
         <Form
           tasks={tasks}
           setTasks={setTasks}
